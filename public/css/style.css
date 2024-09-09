@@ -1,0 +1,184 @@
+body {
+  font-family: "Roboto", system-ui !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 200;
+}
+
+/* Navbar */
+.navbar {
+  height: 4rem !important;
+  background-color: white;
+}
+
+.navbar-collapse.show {
+  background-color: white;
+  transition: none !important;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: white;
+    transition: none !important;
+  }
+}
+
+.searchBar {
+  height: 3rem !important;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid #ebebeb;
+  box-shadow: 2px 2px 5px rgb(165, 165, 165);
+}
+.searchBar:hover {
+  box-shadow: 2px 2px 8px rgb(165, 165, 165);
+}
+.searchBar input {
+}
+.searchInp {
+  margin-left: 1rem;
+  border: none;
+  padding: 0%;
+}
+.searchBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  height: 2.1rem !important;
+  width: 2.1rem !important;
+  color: white !important;
+  border-radius: 50% !important;
+  background-color: #fe424d !important;
+  margin-right: 0.5rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+.nav-link {
+  margin-right: 0.5rem;
+  color: #222222 !important;
+  border-radius: 20px;
+}
+
+.nav-link:hover {
+  background-color: #f0f0f0 !important;
+}
+
+/* footer */
+.f-info-link a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.f-info-link a:hover {
+  text-decoration: underline;
+}
+
+.f-info {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebebeb;
+}
+
+.f-info-social i {
+  margin: 0.6rem;
+  font-size: 1.1rem;
+}
+
+/*Listing cards */
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem !important;
+}
+
+.listing-card:hover .card-img-top {
+  scale: 1.01;
+  /* filter: opacity(0.9); */
+  filter: brightness(80%);
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  height: 15rem !important;
+  transition: 0.2s ease;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.listing-link {
+  text-decoration: none;
+}
+
+.card-img-overlay {
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+}
+
+.overlay-like-btn {
+  opacity: 0;
+  color: white;
+  border: none;
+  background-color: transparent;
+  font-size: 1.3rem;
+  transition: all 0.2s ease;
+}
+
+.card-img-overlay:hover .overlay-like-btn {
+  opacity: 1;
+}
+
+.overlay-like-btn:hover {
+  scale: 1.1;
+  color: #fe424d;
+}
+.overlay-like-btn::after {
+  background-color: #fe424d;
+}
+
+/* new.ejs */
+.add-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* show.ejs */
+.page-image {
+  height: 40vh !important;
+}
+
+/* Review-cards */
+.review-card {
+  border: none !important;
+}
+
+.star {
+  font-size: 0.5rem;
+}
+
+#map {
+  height: 400px;
+  width: 60vw;
+}
